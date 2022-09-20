@@ -16,7 +16,7 @@ const Navigation = () => (
         </Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="/blog/" activeClassName="active">
+        <Link to="/portfolio/" activeClassName="active">
           Portfolio
         </Link>
       </li>
