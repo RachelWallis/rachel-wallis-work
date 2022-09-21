@@ -30,6 +30,6 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
       }
-    }
+    },
   ],
 };
