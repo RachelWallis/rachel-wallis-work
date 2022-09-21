@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful Starter",
-    description: "Official Contentful Gatsby Starter",
+    title: "Rachel Wallis",
+    description: "Personal Site of Rachel Wallis, Product Designer",
   },
   plugins: [
     "gatsby-transformer-sharp",
@@ -20,5 +20,16 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
+    "gatsby-plugin-manifest",
+    {
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+      }
+    }
   ],
 };
