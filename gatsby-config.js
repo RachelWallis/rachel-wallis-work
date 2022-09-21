@@ -20,8 +20,8 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
-    "gatsby-plugin-manifest",
     {
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: `GatsbyJS`,
         short_name: `GatsbyJS`,
