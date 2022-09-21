@@ -55,8 +55,8 @@
 }
 
 .logo {
-  height: var(--size-logo);
-  width: var(--size-logo);
+  height: var(--size-logo-height);
+  width: var(--size-logo-width);
   display: block;
   background-image: url(../images/RW.svg);
 }
