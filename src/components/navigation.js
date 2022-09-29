@@ -25,6 +25,11 @@ const Navigation = () => (
           Portfolio
         </Link>
       </li>
+      <li className={styles.navigationItem}>
+        <Link to="/about/" activeClassName="active">
+          About Me
+        </Link>
+      </li>
     </ul>
   </nav>
 )
