@@ -19,7 +19,7 @@ const ArticlePreview = ({ posts }) => {
             <li key={post.slug}>
               <Link to={`/blog/${post.slug}`} className={styles.link}>
                 <GatsbyImage alt="" image={post.heroImage.gatsbyImage} />
-                <h2 className={styles.title}>{post.title}</h2>
+                <h3 className={styles.title}>{post.title}</h3>
               </Link>
               <div>
                 {post.description?.raw && renderRichText(post.description)}

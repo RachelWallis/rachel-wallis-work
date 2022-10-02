@@ -8,19 +8,45 @@ import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 
 
-const ProjectsPage = ({ data }) => (
-    <Layout>
-      <Seo
-        title="Home"
-        keywords={[`gatsby`, `application`, `react`, `portfolio`]}
-      />
-      <h1>Projects</h1>
-      <div className="project-list">
+class PortfolioIndex extends React.Component {
+  render() {
+    const posts = get(this, 'props.data.allContentfulPortfolio.nodes')
 
-      </div>
-    </Layout>
-  );
+    return (
+      <Layout location={this.props.location}>
+        <Seo title="Portfolio" />
+        <Hero title="Portfolio" />
+        <ArticlePreview posts={posts} />
+      </Layout>
+    )
+  }
+}
+
+export default PortfolioIndex
+
+  // graphql query
+export const pageQuery = graphql`
+  query PortfolioIndexQuery {
+    allContentfulPortfolio(sort: { fields: [publishDate], order: DESC }) {
+      nodes {
+        title
+        slug
+        publishDate(formatString: "MMMM Do, YYYY")
+        tags
+        heroImage {
+          gatsbyImage(
+            layout: FULL_WIDTH
+            placeholder: BLURRED
+            width: 424
+            height: 212
+          )
+        }
+        description {
+          raw
+        }
+      }
+    }
+  }
+`
+
   
-  export default ProjectsPage;
-  
-  // ...your graphql query

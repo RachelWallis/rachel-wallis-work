@@ -5,6 +5,7 @@ import get from 'lodash/get'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
+import Container from '../components/container'
 
 class RootIndex extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class RootIndex extends React.Component {
           title={author.name}
           content={author.shortBio}
         />
+        <div class="section-header"><h2>Latest Blog Posts</h2></div>
         <ArticlePreview posts={posts} />
       </Layout>
     )

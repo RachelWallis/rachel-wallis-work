@@ -8,20 +8,20 @@ import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 
 
-const ProjectsPage = ({ data }) => (
+const AboutPage = ({ data }) => (
     <Layout>
       <Seo
-        title="Home"
+        title="About Me"
         keywords={[`gatsby`, `application`, `react`, `portfolio`]}
       />
       <h1>About Me</h1>
-      <div className="project-list">
+      <div className="about-page">
 
       </div>
     </Layout>
   );
   
-  export default ProjectsPage;
+  export default AboutPage;
   
   // ...your graphql query
 

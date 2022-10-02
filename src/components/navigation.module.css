@@ -5,6 +5,8 @@
   align-items: center;
   margin: 0 auto;
   padding: var(--space-2xl) var(--size-gutter);
+  background-color: var(--nav-bg);
+  border-bottom: 2px solid var(--border);
 }
 
 .navigation {
@@ -12,23 +14,29 @@
   list-style: none;
   margin: 0;
   gap: var(--space-xl);
+  font-size: var(--text-lg);
 }
 
 .navigationItem {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .navigationItem a {
   border-bottom: 1.5px solid transparent;
   color: currentColor;
-  text-decoration: none;
 }
 
 .navigationItem a:hover {
   border-bottom-color: var(--primary);
   color: var(--primary);
+}
+
+nav li a:active{
+  font-family: 'Catamaran Bold', sans-serif;
+  font-weight: var(--heavy);
 }
 
 .logoLink {
@@ -38,6 +46,7 @@
   flex-direction: row;
   flex-shrink: 0;
   gap: var(--space-md);
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {

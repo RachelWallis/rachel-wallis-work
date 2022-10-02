@@ -7,6 +7,28 @@
   grid-gap: var(--space-3xl);
 }
 
+.article-list li {
+  background-color: white;
+  border: 2px solid var(--border);
+  flex-direction: column;
+  display: flex;
+}
+
+.article-list li img {
+  border: none;
+}
+
+.article-list li h3, .article-list li div {
+  padding: var(--space-lg);
+  padding-bottom: 0;
+}
+
+.article-list li div:last-of-type {
+  padding: var(--space-lg);
+  margin-top: auto;
+  align-items: center;
+}
+
 .title {
   display: inline-block;
   font-size: var(--text-lg);
