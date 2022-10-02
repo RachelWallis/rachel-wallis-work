@@ -21,7 +21,7 @@ const ArticlePreview = ({ posts }) => {
                 <GatsbyImage alt="" image={post.heroImage.gatsbyImage} />
                 <h3 className={styles.title}>{post.title}</h3>
               </Link>
-              <div>
+              <div className={styles.description}>
                 {post.description?.raw && renderRichText(post.description)}
               </div>
               <div className={styles.meta}>
