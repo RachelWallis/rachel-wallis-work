@@ -77,6 +77,7 @@
   --size-logo-width: var(--space-3xl);
   --size-logo-height: var(--space-2xl);
   --size-max-width: 80rem;
+  --size-full-width: 100vw;
 }
 
 @media (min-width: 480px) {
