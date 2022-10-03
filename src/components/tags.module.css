@@ -4,8 +4,8 @@
 }
 
 .tag {
-  border: 2px solid var(--border);
-  border-radius: var(--radius-sm);
+  border: 2px dashed var(--border);
+  border-radius: 0;
   line-height: var(--solid);
   padding: var(--space-sm) var(--space-md);
   background-color: var(--tag-bg);

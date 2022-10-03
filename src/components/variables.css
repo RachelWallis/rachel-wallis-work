@@ -57,8 +57,8 @@
   --background: #ffffff;
   --nav-bg: white;
   --hero-bg: var(--secondary);
-  --tag-bg: #e5e5e5;
-  --section-header-bg: #78c8b0;
+  --tag-bg: #acecdd;
+  --section-header-bg: var(--primary);
   --border: var(--black);
 
   /* text */
