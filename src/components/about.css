@@ -1,0 +1,16 @@
+.about-page {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    align-items: center;
+    margin: 0 auto;
+    padding: var(--space-2xl) var(--size-gutter);
+    background-color: var(--nav-bg);
+
+  }
+
+  .about-page p {
+    text-align: center;
+    width: 100vw;
+  }
+  
